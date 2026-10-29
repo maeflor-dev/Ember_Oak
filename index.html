@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ember & Oak — a cinematic specialty coffee house in Brooklyn. Single-origin beans, small-batch roasting, and a warm, dramatic atmosphere.">
+  <meta name="theme-color" content="#16110D">
+  <title>Ember &amp; Oak</title>
+     
+        <link rel="stylesheet" href="public/style.css">
+        <script src="public/script.js" defer></script>
+
+    <!-- Icon tab -->                                    
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+  
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+   
+</head>
+
+<body>
+
+  <!-- SKIP LINK -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Ember and Oak — home">
+        <i data-lucide="coffee" aria-hidden="true"></i>
+        Ember<span aria-hidden="true">&amp;</span>Oak
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bestsellers">Best Sellers</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn--primary btn--sm">Book a Table</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#bestsellers">Best Sellers</a>
+      <a href="#menu">Menu</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--primary btn--sm">Book a Table</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow">— Specialty Coffee, Brooklyn</span>
+          <h1>Slow mornings, <em>bold</em> flavours.</h1>
+          <p>Single-origin beans, roasted in small batches and brewed with intention. A warm, cinematic corner for people who take their coffee seriously.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn--primary">
+              Explore the Menu
+              <i data-lucide="arrow-right" aria-hidden="true" style="width:20px;height:20px"></i>
+            </a>
+            <a href="#about" class="btn btn--ghost">Our Story</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>12+</strong><span>Origins sourced</span></div>
+            <div class="hero-stat"><strong>4.9</strong><span>Average rating</span></div>
+            <div class="hero-stat"><strong>8 yrs</strong><span>Roasting craft</span></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about section">
+        <span>Scroll</span>
+        <i data-lucide="chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img
+            src="images/about-coffee.JPG"
+            alt="Coffee roaster inspecting freshly roasted beans"
+            width="720" height="900" loading="lazy">
+        </div>
+
+        <div class="about-content reveal">
+          <span class="eyebrow">Our Story</span>
+          <h2>Crafted by hand,<br>guided by <em>origin</em>.</h2>
+          <p>Ember &amp; Oak began with a simple obsession: to understand what makes a great cup of coffee. We travel to farms across Ethiopia, Colombia and Guatemala, meeting the growers who make it possible.</p>
+          <p>Every batch is roasted on-site in our vintage Probat, then rested and brewed to order. No shortcuts — just patience, precision and respect for the bean.</p>
+
+          <blockquote class="about-quote">"Every batch is roasted on-site. No shortcuts."</blockquote>
+
+          <ul class="about-list">
+            <li><i data-lucide="leaf" aria-hidden="true"></i> Direct-trade relationships with smallholder farms</li>
+            <li><i data-lucide="flame" aria-hidden="true"></i> Small-batch roasting on a vintage Probat</li>
+            <li><i data-lucide="award" aria-hidden="true"></i> Q-grader certified baristas on every shift</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section id="bestsellers">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Signature Picks</span>
+          <h2>Our best sellers</h2>
+          <p>Three drinks our regulars keep coming back for — crafted with precision and the finest seasonal beans.</p>
+        </div>
+
+        <div class="cards-grid reveal-stagger">
+          <article class="product-card">
+            <div class="product-card__img">
+              <span class="badge badge--terra">Chef's Choice</span>
+              <img
+                src="images/micro-foam.JPG"
+                alt="Velvet flat white with silky micro-foam"
+                width="600" height="560" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3>Velvet Flat White</h3>
+              <p class="product-card__desc">Double ristretto, silky micro-foam and a whisper of cocoa.</p>
+              <div class="product-card__foot">
+                <span class="price">$5.20</span>
+                <a href="#contact" class="btn btn--primary btn--sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__img">
+              <span class="badge badge--sage">Best Seller</span>
+              <img
+                src="images/Midnight-cold.JPG"
+                alt="Midnight cold brew served over ice"
+                width="600" height="560" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3>Midnight Cold Brew</h3>
+              <p class="product-card__desc">18-hour steep with notes of dark chocolate and orange zest.</p>
+              <div class="product-card__foot">
+                <span class="price">$5.80</span>
+                <a href="#contact" class="btn btn--primary btn--sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__img">
+              <span class="badge badge--sage">Seasonal</span>
+              <img
+                src="images/Honey-lavender.JPG"
+                alt="Honey lavender latte with oat milk"
+                width="600" height="560" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <h3>Honey Lavender Latte</h3>
+              <p class="product-card__desc">Local wildflower honey, lavender and creamy oat milk.</p>
+              <div class="product-card__foot">
+                <span class="price">$6.40</span>
+                <a href="#contact" class="btn btn--primary btn--sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The Menu</span>
+          <h2>Brewed for every mood</h2>
+          <p>From quick espresso shots to slow-steeped cold brews — every cup made with intention.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab-btn active" role="tab" id="tab-espresso" aria-selected="true" aria-controls="espresso" data-tab="espresso">Espresso</button>
+          <button class="tab-btn" role="tab" id="tab-brews" aria-selected="false" aria-controls="brews" data-tab="brews">Brews</button>
+          <button class="tab-btn" role="tab" id="tab-tea" aria-selected="false" aria-controls="tea" data-tab="tea">Tea &amp; Matcha</button>
+          <button class="tab-btn" role="tab" id="tab-pastries" aria-selected="false" aria-controls="pastries" data-tab="pastries">Pastries</button>
+        </div>
+
+        <div class="menu-panel active" id="espresso" role="tabpanel" aria-labelledby="tab-espresso">
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Espresso</div><div class="menu-item__desc">Single origin, intense crema</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Single <strong>$3.20</strong></span><span class="menu-item__size">Double <strong>$4.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Cappuccino</div><div class="menu-item__desc">Double shot, velvety foam</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.80</strong></span><span class="menu-item__size">Large <strong>$5.60</strong></span><span class="menu-item__size">Extra large <strong>$6.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Flat White</div><div class="menu-item__desc">Ristretto, silk micro-foam</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.20</strong></span><span class="menu-item__size">Large <strong>$5.90</strong></span><span class="menu-item__size">Extra large <strong>$6.50</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Mocha</div><div class="menu-item__desc">Dark chocolate, espresso</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.60</strong></span><span class="menu-item__size">Large <strong>$6.40</strong></span><span class="menu-item__size">Extra large <strong>$7.00</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Cortado</div><div class="menu-item__desc">Equal parts espresso &amp; milk</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.40</strong></span><span class="menu-item__size">Large <strong>$5.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Americano</div><div class="menu-item__desc">Espresso, hot water</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$3.80</strong></span><span class="menu-item__size">Large <strong>$4.50</strong></span><span class="menu-item__size">Extra large <strong>$5.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Classic Latte</div><div class="menu-item__desc">Espresso with steamed or chilled milk</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.90</strong></span><span class="menu-item__size">Large <strong>$5.70</strong></span><span class="menu-item__size">Extra large <strong>$6.40</strong></span></div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="brews" role="tabpanel" aria-labelledby="tab-brews">
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Classic Cold Brew</div><div class="menu-item__desc">18-hour steep, smooth &amp; bold</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.90</strong></span><span class="menu-item__size">Large <strong>$5.70</strong></span><span class="menu-item__size">Extra large <strong>$6.40</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Nitro Cold Brew</div><div class="menu-item__desc">Nitrogen-infused, creamy head</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.80</strong></span><span class="menu-item__size">Large <strong>$6.50</strong></span><span class="menu-item__size">Extra large <strong>$7.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Vanilla Sweet Cream</div><div class="menu-item__desc">Cold brew, house vanilla cream</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.60</strong></span><span class="menu-item__size">Large <strong>$6.40</strong></span><span class="menu-item__size">Extra large <strong>$7.10</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Espresso Tonic</div><div class="menu-item__desc">Tonic water, double espresso</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.20</strong></span><span class="menu-item__size">Large <strong>$6.00</strong></span><span class="menu-item__size">Extra large <strong>$6.70</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">V60 Pour Over</div><div class="menu-item__desc">Single origin, hand-poured</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.40</strong></span><span class="menu-item__size">Large <strong>$6.20</strong></span><span class="menu-item__size">Extra large <strong>$6.90</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Iced Latte</div><div class="menu-item__desc">Espresso, cold milk, ice</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.70</strong></span><span class="menu-item__size">Large <strong>$5.50</strong></span><span class="menu-item__size">Extra large <strong>$6.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Caramel Latte</div><div class="menu-item__desc">Espresso, milk and house caramel</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.40</strong></span><span class="menu-item__size">Large <strong>$6.20</strong></span><span class="menu-item__size">Extra large <strong>$6.90</strong></span></div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="tea" role="tabpanel" aria-labelledby="tab-tea">
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Matcha Latte</div><div class="menu-item__desc">Ceremonial matcha, steamed or chilled milk</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.40</strong></span><span class="menu-item__size">Large <strong>$6.20</strong></span><span class="menu-item__size">Extra large <strong>$6.90</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Chai Latte</div><div class="menu-item__desc">Black tea, warming spices and milk</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.90</strong></span><span class="menu-item__size">Large <strong>$5.70</strong></span><span class="menu-item__size">Extra large <strong>$6.40</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">London Fog</div><div class="menu-item__desc">Earl Grey, vanilla and steamed milk</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.80</strong></span><span class="menu-item__size">Large <strong>$5.50</strong></span><span class="menu-item__size">Extra large <strong>$6.20</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Loose Leaf Tea</div><div class="menu-item__desc">Choose Earl Grey, mint or breakfast tea</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$3.50</strong></span><span class="menu-item__size">Large <strong>$4.20</strong></span><span class="menu-item__size">Extra large <strong>$4.90</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Hot Chocolate</div><div class="menu-item__desc">Dark chocolate, steamed milk</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Hot</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$4.50</strong></span><span class="menu-item__size">Large <strong>$5.20</strong></span><span class="menu-item__size">Extra large <strong>$5.90</strong></span></div>
+          </div>
+          <div class="menu-item menu-item--drink">
+            <div><div class="menu-item__name">Iced Matcha</div><div class="menu-item__desc">Ceremonial matcha shaken over ice</div></div>
+            <div class="menu-item__temperatures"><span class="menu-item__temperature">Cold</span></div>
+            <div class="menu-item__sizes"><span class="menu-item__size">Small <strong>$5.20</strong></span><span class="menu-item__size">Large <strong>$6.00</strong></span><span class="menu-item__size">Extra large <strong>$6.70</strong></span></div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="pastries" role="tabpanel" aria-labelledby="tab-pastries">
+          <div class="menu-item">
+            <div><div class="menu-item__name">Butter Croissant</div><div class="menu-item__desc">French butter, flaky layers</div></div>
+            <div class="menu-item__price">$3.80</div>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item__name">Almond Danish</div><div class="menu-item__desc">Frangipane, toasted almonds</div></div>
+            <div class="menu-item__price">$4.20</div>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item__name">Chocolate Babka</div><div class="menu-item__desc">Dark chocolate, sea salt</div></div>
+            <div class="menu-item__price">$4.80</div>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item__name">Banana Bread</div><div class="menu-item__desc">Walnut, brown butter</div></div>
+            <div class="menu-item__price">$3.90</div>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item__name">Cinnamon Roll</div><div class="menu-item__desc">Cream cheese glaze</div></div>
+            <div class="menu-item__price">$4.50</div>
+          </div>
+          <div class="menu-item">
+            <div><div class="menu-item__name">Lemon Tart</div><div class="menu-item__desc">Shortcrust, torched meringue</div></div>
+            <div class="menu-item__price">$4.60</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow--sage">Kind Words</span>
+          <h2>What our regulars say</h2>
+          <p>Real reviews from people who make Ember &amp; Oak part of their daily ritual.</p>
+        </div>
+
+        <div class="reviews-carousel reveal" id="reviewsCarousel" role="region" aria-roledescription="carousel" aria-label="Customer reviews" tabindex="0">
+          <div class="reviews-grid">
+            <div class="reviews-track" id="reviewsTrack" aria-live="off">
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="1 of 6" aria-hidden="false">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>"The flat white here is a religious experience — silky, strong and perfectly balanced. I've stopped going anywhere else."</blockquote>
+            <div class="review-author">
+              <img src="imagesperson/person1.JPG" alt="Portrait of Maya Chen" width="52" height="52" loading="lazy">
+              <div><strong>Maya Chen</strong><span>Regular since 2021</span></div>
+            </div>
+          </article>
+
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="2 of 6" aria-hidden="true">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>"The cold brew is smooth and never bitter. The baristas remember my order, which makes a 7am start feel human."</blockquote>
+            <div class="review-author">
+              <img src="imagesperson/person2.JPG" alt="Portrait of James Okafor" width="52" height="52" loading="lazy">
+              <div><strong>James Okafor</strong><span>Architect &amp; daily visitor</span></div>
+            </div>
+          </article>
+
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="3 of 6" aria-hidden="true">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>"Flaky pastries, beautiful ceramics, and a cappuccino that tastes like Italy. The whole space feels like a deep breath."</blockquote>
+            <div class="review-author">
+              <img src="imagesperson/person3.JPG" alt="Portrait of Sofia Marino" width="52" height="52" loading="lazy">
+              <div><strong>Sofia Marino</strong><span>Food writer</span></div>
+            </div>
+          </article>
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="4 of 6" aria-hidden="true">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>"I stop in for the pour-over and end up staying for the atmosphere. You can taste how much care goes into every cup."</blockquote>
+            <div class="review-author">
+              <img src="imagesperson/person4.JPG" alt="Portrait of Daniel Reyes" width="52" height="52" loading="lazy">
+              <div><strong>Daniel Reyes</strong><span>Neighbourhood regular</span></div>
+            </div>
+          </article>
+
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="5 of 6" aria-hidden="true">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>"The matcha is bright and beautifully balanced, and the team is always happy to recommend something new."</blockquote>
+            <div class="review-author">
+              <img src="imagesperson/person5.JPG" alt="Portrait of Aisha Patel" width="52" height="52" loading="lazy">
+              <div><strong>Aisha Patel</strong><span>Matcha enthusiast</span></div>
+            </div>
+          </article>
+
+          <article class="review-card" role="group" aria-roledescription="slide" aria-label="6 of 6" aria-hidden="true">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i><i data-lucide="star" aria-hidden="true"></i>
+            </div>
+            <blockquote>"A lovely place to meet friends: thoughtful coffee, warm service, and pastries that never make it home."</blockquote>
+            <div class="review-author">
+              <img src="imagesperson/person6.JPG" alt="Portrait of Oliver Brooks" width="52" height="52" loading="lazy">
+              <div><strong>Oliver Brooks</strong><span>Weekend visitor</span></div>
+            </div>
+          </article>
+            </div>
+          </div>
+          <div class="reviews-controls" role="group" aria-label="Review slideshow controls">
+            <button class="reviews-arrow" type="button" id="reviewsPrev" aria-label="Previous review">
+              <i data-lucide="chevron-left" aria-hidden="true"></i>
+            </button>
+            <div class="reviews-dots" role="group" aria-label="Choose a review">
+              <button class="reviews-dot" type="button" aria-label="Show review 1" aria-current="true"></button>
+              <button class="reviews-dot" type="button" aria-label="Show review 2" aria-current="false"></button>
+              <button class="reviews-dot" type="button" aria-label="Show review 3" aria-current="false"></button>
+              <button class="reviews-dot" type="button" aria-label="Show review 4" aria-current="false"></button>
+              <button class="reviews-dot" type="button" aria-label="Show review 5" aria-current="false"></button>
+              <button class="reviews-dot" type="button" aria-label="Show review 6" aria-current="false"></button>
+            </div>
+            <button class="reviews-arrow" type="button" id="reviewsNext" aria-label="Next review">
+              <i data-lucide="chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2>Inside the atelier</h2>
+          <p>A look at the space, the craft, and the small details that make a cup feel special.</p>
+        </div>
+
+        <div class="gallery-grid reveal-stagger">
+          <button type="button" class="gallery-item" data-full="galleryimages/wooden-tables.JPG" aria-label="View larger: warm cafe interior with wooden tables">
+            <img src="galleryimages/wooden-tables.JPG" alt="Warm cafe interior with wooden tables" width="400" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-full="galleryimages/Latte-art.JPG" aria-label="View larger: latte art in a ceramic cup">
+            <img src="galleryimages/Latte-art.JPG" alt="Latte art in a ceramic cup" width="400" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-full="galleryimages/Freshly-roasted.JPG" aria-label="View larger: freshly roasted coffee beans">
+            <img src="galleryimages/Freshly-roasted.JPG" alt="Freshly roasted coffee beans" width="400" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-full="galleryimages/Barista.JPG" aria-label="View larger: barista pulling an espresso shot">
+            <img src="galleryimages/Barista.JPG" alt="Barista pulling an espresso shot" width="400" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-full="galleryimages/Croissant.JPG" aria-label="View larger: croissant and coffee on a table">
+            <img src="galleryimages/Croissant.JPG" alt="Croissant and coffee on a table" width="400" height="400" loading="lazy">
+          </button>
+          <button type="button" class="gallery-item" data-full="galleryimages/Minimalist.JPG" aria-label="View larger: minimalist cafe seating area">
+            <img src="galleryimages/Minimalist.JPG" alt="Minimalist cafe seating area" width="400" height="400" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Questions</span>
+          <h2>Frequently asked</h2>
+          <p>Everything you need to know before your first visit.</p>
+        </div>
+
+        <div class="faq-list reveal-stagger">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you offer dairy-free milk options?
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — we have oat, almond and soy milk available for every drink. Our barista's favourite for lattes is a barista-edition oat milk that steams beautifully.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I book a table for a group?
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. We take reservations for groups of up to 10 people. Use the contact form below or call us at +1 (555) 012-3456 and we'll set it up.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Where do your beans come from?
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We work directly with smallholder farms in Ethiopia, Colombia and Guatemala. All beans are specialty grade and roasted in-house on our vintage Probat roaster.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is there Wi-Fi and workspace?
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes — fast Wi-Fi and plenty of power outlets. We welcome remote workers on weekdays until 5 PM. Weekends are reserved for slow, screen-free coffee.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you sell whole beans to take home?
+              <i data-lucide="chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We do. Every origin we brew is available as whole beans or freshly ground to order. Ask the barista for a tasting note card with your bag.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready for your next <em>ritual</em>?</h2>
+        <p>Book a table, join us for a slow afternoon, or simply drop by for a perfect cup. We'll save you a seat.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn--primary">
+            Book a Table
+            <i data-lucide="calendar" aria-hidden="true" style="width:20px;height:20px"></i>
+          </a>
+          <a href="#menu" class="btn btn--ghost">View the Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="eyebrow">Visit Us</span>
+          <h2>Come say hello</h2>
+          <p>We're a short walk from the High Line — look for the warm glow and the smell of fresh espresso.</p>
+
+          <div class="contact-detail">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <div><strong>Address</strong><span>124 Roast Lane, Brooklyn, NY 11201</span></div>
+          </div>
+          <div class="contact-detail">
+            <i data-lucide="phone" aria-hidden="true"></i>
+            <div><strong>Phone</strong><span>+1 (555) 012-3456</span></div>
+          </div>
+          <div class="contact-detail">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <div><strong>Email</strong><span>hello@emberandoak.coffee</span></div>
+          </div>
+          <div class="contact-detail">
+            <i data-lucide="clock" aria-hidden="true"></i>
+            <div><strong>Hours</strong><span>Mon–Fri: 7am – 7pm<br>Sat–Sun: 8am – 6pm</span></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <h2>Send an inquiry</h2>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Table booking, feedback, wholesale…">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us how we can help…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">
+            Send Message
+            <i data-lucide="send" aria-hidden="true" style="width:18px;height:18px"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="logo" aria-label="Ember and Oak — home">
+            <i data-lucide="coffee" aria-hidden="true"></i>
+            Ember<span aria-hidden="true">&amp;</span>Oak
+          </a>
+          <p>Specialty coffee, roasted in small batches in Brooklyn. A warm, cinematic corner for slow mornings and good conversation.</p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#bestsellers">Best Sellers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Book a Table</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"></circle></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 5.92a8.2 8.2 0 0 1-2.36.65 4.12 4.12 0 0 0 1.8-2.27 8.23 8.23 0 0 1-2.6.99 4.1 4.1 0 0 0-7 3.74 11.65 11.65 0 0 1-8.46-4.29 4.1 4.1 0 0 0 1.27 5.48 4.08 4.08 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.29 4.02 4.1 4.1 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.85A8.23 8.23 0 0 1 2 18.4a11.61 11.61 0 0 0 6.29 1.84c7.55 0 11.68-6.25 11.68-11.68l-.01-.53A8.34 8.34 0 0 0 22 5.92Z"></path></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8.2h2.76l.41-3.2H13.5V7.56c0-.93.26-1.56 1.59-1.56h1.7V3.14A22.6 22.6 0 0 0 14.31 3c-2.46 0-4.14 1.5-4.14 4.25V9.6H7.4v3.2h2.77V21h3.33Z"></path></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.55 15.7V8.3L15.82 12l-6.27 3.7Z"></path></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Mae Flor Alivio. All rights reserved.</span>
+        <p class="footer-disclaimer"> Disclaimer: This website is a design study created for portfolio demonstration purposes. The coffee shop and offers shown are fictional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GALLERY LIGHTBOX — direct child of <body> -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close image preview">
+      <i data-lucide="x" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous image">
+      <i data-lucide="chevron-left" aria-hidden="true"></i>
+    </button>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next image">
+      <i data-lucide="chevron-right" aria-hidden="true"></i>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+</body>
+ 
+</html>
