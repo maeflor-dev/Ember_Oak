@@ -416,7 +416,7 @@
       align-items: flex-end;
       padding-top: 9rem;
       padding-bottom: 7rem;
-      background-image: url('/images/hero.JPG');
+      background-image: url('images/hero.JPG');
       background-size: cover;
       background-position: center;
       isolation: isolate;
